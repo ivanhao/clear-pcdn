@@ -53,10 +53,7 @@ EOF
 
 chmod +x /usr/bin/clear-pcdn
 
-if [ `cat /etc/crontab|grep clear-pcdn|wc -l` = 0 ];then
-    sed -i '/clear-pcdn/d' /etc/crontab
-fi
-echo "* */$y * * *  root /usr/bin/clear-pcdn" >> /etc/crontab
+echo "* */$y * * *  root /usr/bin/clear-pcdn" > /etc/crontab
 systemctl restart cron
 /usr/bin/clear-pcdn
 
