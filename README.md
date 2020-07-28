@@ -3,7 +3,8 @@
 #### 用法：
 
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/ivanhao/clear-pcdn/master/install.sh && chmod +x ./install.sh && ./install.sh
+wget --no-check-certificate https://raw.githubusercontent.com/ivanhao/clear-pcdn/master/install.sh \
+&& chmod +x ./install.sh && ./install.sh
 ```
 
 根据提示输入:
